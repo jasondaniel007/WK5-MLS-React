@@ -11,7 +11,7 @@ function App() {
      {/* Todo: //Your code */}  
      {currentPage === "login" && <Login />}
      {currentPage === "register" && <Register />}
-    <div className="navigation">
+    <div className="navigation app-navigation">
       <button onClick={() => setCurrentPage("login")}>Login</button>
       <button onClick={() => setCurrentPage("register")}>Register</button>
     </div>      

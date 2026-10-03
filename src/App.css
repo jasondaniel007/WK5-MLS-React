@@ -11,8 +11,18 @@ html, body {
 }
 
 .app-layout {
+  background-color: #f0f0f0;
+}
+
+.navigation.app {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.app-layout { 
   min-height: 100vh;
   width: 100vw; 
 }
@@ -24,4 +34,12 @@ html, body {
   align-items: center;
   width: 100%;     
   padding: 1rem;    
+}
+
+.app-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
 }
