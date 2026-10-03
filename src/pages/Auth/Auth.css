@@ -61,3 +61,16 @@
   white-space: nowrap;
   border: 0;
 }
+
+.auth-message {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.auth-error {
+  color: #b42318;
+}
+
+.auth-success {
+  color: #16794c;
+}
