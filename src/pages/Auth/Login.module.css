@@ -1,0 +1,196 @@
+.authContainer {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.authShell {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  width: min(1080px, 100%);
+  min-height: 620px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fffdf8;
+  border: 1px solid #dedbd2;
+  border-radius: 18px;
+  box-shadow: 0 18px 48px rgba(48, 55, 47, 0.12);
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+}
+
+.formPanel {
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem clamp(2rem, 5vw, 5.5rem);
+}
+
+.brandMark {
+  color: #263d35;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.formContent {
+  width: min(360px, 100%);
+  margin: auto 0;
+}
+
+.eyebrow {
+  margin-bottom: 0.8rem;
+  color: #bb633e;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.formContent h1 {
+  max-width: 320px;
+  color: #263d35;
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  line-height: 1.02;
+}
+
+.intro {
+  margin-top: 1.1rem;
+  color: #657068;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.form {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 2.25rem;
+}
+
+.formGroup {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  color: #3f4d45;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.9rem 0.95rem;
+  color: #263d35;
+  background: #fffdf8;
+  border: 1px solid #c9cec5;
+  border-radius: 7px;
+  font: inherit;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.formGroup input::placeholder {
+  color: #3f4d45;
+  font-size: 0.82rem;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.formGroup input:focus {
+  border-color: #bb633e;
+  box-shadow: 0 0 0 3px rgba(187, 99, 62, 0.15);
+}
+
+.form button {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.95rem 1rem;
+  color: #fffdf8;
+  background: #bb633e;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.form button:hover {
+  background: #9f4f31;
+  transform: translateY(-1px);
+}
+
+.visualPanel {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  background: #263d35;
+}
+
+.visualPanel::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(38, 61, 53, 0.02) 35%, rgba(38, 61, 53, 0.74) 100%);
+  content: '';
+}
+
+.visualPanel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visualCaption {
+  position: absolute;
+  z-index: 1;
+  right: clamp(1.5rem, 4vw, 3.5rem);
+  bottom: clamp(1.5rem, 4vw, 3.5rem);
+  left: clamp(1.5rem, 4vw, 3.5rem);
+  color: #fffdf8;
+}
+
+.visualCaption span {
+  display: block;
+  max-width: 380px;
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.visualCaption p {
+  margin-top: 0.8rem;
+  color: rgba(255, 253, 248, 0.82);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .authContainer {
+    padding: 0.5rem;
+  }
+
+  .authShell {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .formPanel {
+    min-height: 570px;
+    padding: 1.5rem clamp(1.25rem, 7vw, 3rem);
+  }
+
+  .visualPanel {
+    min-height: 300px;
+  }
+}
